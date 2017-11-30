@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITOps.ViewModelComposition"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITOps.ViewModelComposition.Mvc", "ITOps.ViewModelComposition.Mvc\ITOps.ViewModelComposition.Mvc.csproj", "{4216A543-7A5B-4D8B-9765-D92CDBC7E6DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketing.ViewModelComposition", "Marketing.ViewModelComposition\Marketing.ViewModelComposition.csproj", "{15002227-4685-4EDD-B0D2-189C871E5019}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -112,6 +114,18 @@ Global
 		{4216A543-7A5B-4D8B-9765-D92CDBC7E6DE}.Release|x64.Build.0 = Release|Any CPU
 		{4216A543-7A5B-4D8B-9765-D92CDBC7E6DE}.Release|x86.ActiveCfg = Release|Any CPU
 		{4216A543-7A5B-4D8B-9765-D92CDBC7E6DE}.Release|x86.Build.0 = Release|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Debug|x64.Build.0 = Debug|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Debug|x86.Build.0 = Debug|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Release|x64.ActiveCfg = Release|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Release|x64.Build.0 = Release|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Release|x86.ActiveCfg = Release|Any CPU
+		{15002227-4685-4EDD-B0D2-189C871E5019}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

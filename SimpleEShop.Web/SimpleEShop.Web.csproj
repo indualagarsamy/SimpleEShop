@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ITOps.ViewModelComposition.Mvc\ITOps.ViewModelComposition.Mvc.csproj" />
     <ProjectReference Include="..\ITOps.ViewModelComposition\ITOps.ViewModelComposition.csproj" />
+    <ProjectReference Include="..\Marketing.ViewModelComposition\Marketing.ViewModelComposition.csproj" />
   </ItemGroup>
 
 </Project>
