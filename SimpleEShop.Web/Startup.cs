@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ITOps.ViewModelComposition;
+using ITOps.ViewModelComposition.Mvc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -21,7 +19,9 @@ namespace SimpleEShop.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddViewModelComposition();
+            services.AddMvc()
+                .AddViewModelCompositionMvcSupport();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
