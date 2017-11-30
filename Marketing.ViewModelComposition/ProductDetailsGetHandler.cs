@@ -27,7 +27,7 @@ namespace Marketing.ViewModelComposition
             //invoke Marketing back-end API to retrieve marketing related product details
             var id = (string)routeData.Values["id"];
 
-            var url = $"http://localhost:....../....../{id}";
+            var url = $"http://localhost:53951/product/{id}";
             var client = new HttpClient();
             var response = await client.GetAsync(url);
 

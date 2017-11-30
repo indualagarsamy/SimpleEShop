@@ -19,6 +19,7 @@ namespace Sales.Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+               .UseUrls("http://localhost:54217")
                 .UseStartup<Startup>()
                 .Build();
     }
