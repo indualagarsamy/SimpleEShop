@@ -1,10 +1,9 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using ITOps.ViewModelComposition;
+﻿using ITOps.ViewModelComposition;
 using ITOps.ViewModelComposition.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Sales.ViewModelComposition
 {
@@ -23,7 +22,7 @@ namespace Sales.ViewModelComposition
 
         public async Task Handle(dynamic vm, RouteData routeData, HttpRequest request)
         {
-            //invoke Marketing back-end API to retrieve marketing related product details
+            //invoke Sales back-end API to retrieve sales related product details
             var id = (string)routeData.Values["id"];
 
             var url = $"http://localhost:54217/product/{id}";
