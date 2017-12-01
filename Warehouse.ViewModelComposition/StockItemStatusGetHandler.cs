@@ -31,7 +31,7 @@ namespace Warehouse.ViewModelComposition
             var response = await client.GetAsync(url);
 
             dynamic stockStatus = await response.Content.AsExpandoAsync();
-            vm.InStock = stockStatus.InStock;
+            vm.InStock = stockStatus.inStock;
         }
     }
 }

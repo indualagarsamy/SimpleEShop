@@ -33,8 +33,9 @@ namespace Marketing.ViewModelComposition
 
             dynamic productDetails = await response.Content.AsExpandoAsync();
 
-            vm.ProductName = productDetails.Name;
-            vm.ProductDescription = productDetails.Description;
+            vm.ProductName = productDetails.name;
+            vm.ProductDescription = productDetails.description;
+            vm.ProductId = productDetails.productId;
         }
     }
 }

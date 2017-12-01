@@ -31,7 +31,7 @@ namespace Sales.ViewModelComposition
             var response = await client.GetAsync(url);
 
             dynamic productPrice = await response.Content.AsExpandoAsync();
-            vm.Price = productPrice.Price;
+            vm.Price = productPrice.price;
         }
     }
 }
