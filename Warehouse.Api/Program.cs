@@ -19,6 +19,7 @@ namespace Warehouse.Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://localhost:54221")
                 .UseStartup<Startup>()
                 .Build();
     }
