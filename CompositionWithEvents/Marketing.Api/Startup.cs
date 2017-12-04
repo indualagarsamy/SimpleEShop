@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using NServiceBus;
 
 namespace Marketing.Api
 {
@@ -27,6 +28,7 @@ namespace Marketing.Api
         {
             services.AddDbContext<ProductDetailsContext>(opt => opt.UseInMemoryDatabase("ProductDetailsList"));
             services.AddMvc();
+            BootstrapNServiceBusForMessaging(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,18 @@ namespace Marketing.Api
             }
 
             app.UseMvc();
+        }
+
+        void BootstrapNServiceBusForMessaging(IServiceCollection services)
+        {
+
+            var config = new EndpointConfiguration("Marketing.Api");
+            config.UseSerialization<NewtonsoftSerializer>();
+            config.UseTransport<LearningTransport>();
+            config.SendFailedMessagesTo("error");
+            var instance = Endpoint.Start(config).GetAwaiter().GetResult();
+            services.AddSingleton<IMessageSession>(instance);
+
         }
     }
 }

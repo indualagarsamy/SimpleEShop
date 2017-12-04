@@ -23,4 +23,9 @@
     <hr />
     <h4>Product Id# @Model.ProductId</h4>
 </div>
+<div>
+    <form action="/products/addtocart/@Model.ProductId" method="post">
+        <input type="submit" value="Add to cart">
+    </form>
+</div>
 

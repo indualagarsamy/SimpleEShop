@@ -12,5 +12,11 @@ namespace SimpleEShop.UI.Controllers
         {
             return View();
         }
+
+        public IActionResult AddToCart(int id)
+        {
+            return View();
+        }
+
     }
 }

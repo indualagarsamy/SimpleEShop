@@ -16,11 +16,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITOps.ViewModelComposition.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Marketing.ViewModelComposition", "Marketing.ViewModelComposition\Marketing.ViewModelComposition.csproj", "{15002227-4685-4EDD-B0D2-189C871E5019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sales.ViewModelComposition", "Sales.ViewModelComposition\Sales.ViewModelComposition.csproj", "{D7AB7701-432A-4BFC-A19A-CB61587C65AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sales.ViewModelComposition", "Sales.ViewModelComposition\Sales.ViewModelComposition.csproj", "{D7AB7701-432A-4BFC-A19A-CB61587C65AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.ViewModelComposition", "Warehouse.ViewModelComposition\Warehouse.ViewModelComposition.csproj", "{39E6B9DE-C2CB-4D6E-81AF-5925AA0F8428}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warehouse.ViewModelComposition", "Warehouse.ViewModelComposition\Warehouse.ViewModelComposition.csproj", "{39E6B9DE-C2CB-4D6E-81AF-5925AA0F8428}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleEShop.UI", "SimpleEShop.UI\SimpleEShop.UI.csproj", "{1755A36B-7089-44F3-B235-0F43E7470117}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleEShop.UI", "SimpleEShop.UI\SimpleEShop.UI.csproj", "{1755A36B-7089-44F3-B235-0F43E7470117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketing.Messages", "Marketing.Messages\Marketing.Messages.csproj", "{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -140,6 +142,18 @@ Global
 		{1755A36B-7089-44F3-B235-0F43E7470117}.Release|x64.Build.0 = Release|Any CPU
 		{1755A36B-7089-44F3-B235-0F43E7470117}.Release|x86.ActiveCfg = Release|Any CPU
 		{1755A36B-7089-44F3-B235-0F43E7470117}.Release|x86.Build.0 = Release|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Debug|x64.Build.0 = Debug|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Release|x64.ActiveCfg = Release|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Release|x64.Build.0 = Release|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{4CFCEA34-F2C5-4AE7-89E4-E3F7D7796C6C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

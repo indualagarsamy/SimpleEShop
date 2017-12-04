@@ -42,11 +42,6 @@ namespace SimpleEShop.UI
                 config.UseSerialization<NewtonsoftSerializer>();
                 config.UseTransport<LearningTransport>();
                 config.SendFailedMessagesTo("error");
-
-                var messageConventions = config.Conventions();
-                messageConventions.DefiningEventsAs(t => t.Namespace != null && t.Namespace.EndsWith(".Messages.Events"));
-                messageConventions.DefiningCommandsAs(t => t.Namespace != null && t.Namespace.EndsWith(".Messages.Commands"));
-
                 var instance = Endpoint.Start(config).GetAwaiter().GetResult();
                 services.AddSingleton<IMessageSession>(instance);
             
