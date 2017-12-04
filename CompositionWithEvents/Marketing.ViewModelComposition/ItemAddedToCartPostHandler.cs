@@ -26,13 +26,14 @@ namespace Marketing.ViewModelComposition
 
             return HttpMethods.IsPost(httpVerb)
                    && controller.ToLowerInvariant() == "products"
-                   && action.ToLowerInvariant() == "addToCart"
+                   && action.ToLowerInvariant() == "addtocart"
                    && routeData.Values.ContainsKey("id");
         }
 
         public async Task Handle(dynamic vm, RouteData routeData, HttpRequest request)
         {
-            await session.Send(new AddProductItemToCart() {ProductId = vm.productId});
+            var productId = (string) routeData.Values["id"];
+            await session.Send("Marketing.Api", new AddProductItemToCart() { ProductId = Int32.Parse(productId) });
         }
     }
 }
