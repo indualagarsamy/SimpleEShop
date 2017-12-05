@@ -21,25 +21,9 @@ namespace ITOps.ViewModelComposition.Mvc
         public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
         {
             (var viewModel, var statusCode) = await CompositionHandler.HandleRequest(context.HttpContext);
-
-            var routeData = context.HttpContext.GetRouteData();
-            var request = context.HttpContext.Request;
-
-            //matching handlers could be cached by URL
-            //per route only 1 result handler is allowed, the owning one
-            var handler = resultHandlers
-                .Where(a => a.Matches(routeData, request.Method, request))
-                .SingleOrDefault();
-
-            if (handler != null)
-            {
-                await handler.Handle(context, viewModel, statusCode);
-            }
-            else
-            {
-                defaultHandler();
-            }
-
+            
+            defaultHandler();
+            
             await next();
 
             void defaultHandler()
